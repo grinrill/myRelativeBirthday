@@ -1,0 +1,12 @@
+api_id: 12345
+api_hash: abcd
+delta:
+  # set bithday offset here
+  # (a year and 12 hours ago for example)
+  days: -365
+  hours: -12
+  seconds: 0
+  microseconds: 0
+  milliseconds: 0
+  minutes: 0
+  weeks: 0
