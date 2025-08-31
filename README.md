@@ -9,6 +9,32 @@ A simple script to set your birthday in telegram relative to the current date. B
 4. Create config.yml:
    - `api_id` and `api_hash` from my.telegram.org
    - `delta`: set delta relative to the current date
+   - `date`: `year`, `month` and `day` params will override relative now + date result if set
+
+## Config examples
+Example config for birth year=2001 and always today:
+```yaml
+api_id: 12345
+api_hash: abcd
+delta:
+  weeks: 0
+  days: 0
+  hours: 0
+date:
+  year: 2001
+```
+
+Another example to be always 18 y.o. and birthday each month 1st day:
+```yaml
+api_id: 12345
+api_hash: abcd
+delta:
+  weeks: 0
+  days: -6 574 # 365*18+4
+  hours: 0
+date:
+  day: 1
+```
 
 ## Usage
 You can use it in two ways

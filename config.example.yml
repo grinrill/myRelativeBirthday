@@ -1,5 +1,7 @@
 api_id: 12345
 api_hash: abcd
+
+# delta can specify weeks, days, hours relative to now
 delta:
   # set bithday offset here
   # (a year and 12 hours ago for example)
@@ -10,3 +12,11 @@ delta:
   milliseconds: 0
   minutes: 0
   weeks: 0
+
+# date can specify year, month, day to set a specific birthday
+# if a field is not specified, it will be taken from the current date + delta
+# otherwise will override the current date + delta
+date:
+  year: 1990
+  month: 1
+  day: 1
