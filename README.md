@@ -46,4 +46,4 @@ On first run you will authorise into you account, after that you can run it with
 ### CRON
 You have to run it manual first time in order to authorise the account
 
-`0 12 * * * cd /path/to/myRelativeBirthday && poetry python main.py`
+`0 12 * * * cd /path/to/myRelativeBirthday && poetry run python main.py`
